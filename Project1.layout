@@ -17,7 +17,12 @@ CursorRow=21
 TopLine=1
 LeftChar=1
 [Editor_3]
-CursorCol=9
-CursorRow=33
-TopLine=16
+CursorCol=15
+CursorRow=43
+TopLine=8
+LeftChar=1
+[Editor_4]
+CursorCol=1
+CursorRow=1
+TopLine=1
 LeftChar=1

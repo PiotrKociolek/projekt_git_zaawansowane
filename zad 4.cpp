@@ -40,7 +40,7 @@ using namespace std;
 
     }
 
-     if(d<0)  
+     if(d<0)   
 
     {      
 

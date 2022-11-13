@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = zad1.o
-LINKOBJ  = zad1.o
+OBJ      = "zad\ 1.o" "zad\ 2.o" "zad\ 3.o" "zad\ 4.o" "zad\ 5.o" zad7.o
+LINKOBJ  = "zad 1.o" "zad 2.o" "zad 3.o" "zad 4.o" "zad 5.o" zad7.o
 LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -24,5 +24,20 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-zad1.o: zad1.cpp
-	$(CPP) -c zad1.cpp -o zad1.o $(CXXFLAGS)
+"zad\ 1.o": zad\ 1.cpp
+	$(CPP) -c "zad 1.cpp" -o "zad 1.o" $(CXXFLAGS)
+
+"zad\ 2.o": zad\ 2.cpp
+	$(CPP) -c "zad 2.cpp" -o "zad 2.o" $(CXXFLAGS)
+
+"zad\ 3.o": zad\ 3.cpp
+	$(CPP) -c "zad 3.cpp" -o "zad 3.o" $(CXXFLAGS)
+
+"zad\ 4.o": zad\ 4.cpp
+	$(CPP) -c "zad 4.cpp" -o "zad 4.o" $(CXXFLAGS)
+
+"zad\ 5.o": zad\ 5.cpp
+	$(CPP) -c "zad 5.cpp" -o "zad 5.o" $(CXXFLAGS)
+
+zad7.o: zad7.cpp
+	$(CPP) -c zad7.cpp -o zad7.o $(CXXFLAGS)
