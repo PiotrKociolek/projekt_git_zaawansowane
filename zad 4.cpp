@@ -45,7 +45,6 @@ using namespace std;
     {      
 
     cout<<"Brak rozwi¹zañ"<<endl;  
-
     }
 
 }
